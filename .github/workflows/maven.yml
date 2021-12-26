@@ -16,7 +16,7 @@ jobs:
         with:
           java-version: '16'
           distribution: 'adopt'
-      - name: compile
+      - name: Compile
         run: mvn clean package
       - name: Upload Artifact
         uses: actions/upload-artifact@v2
