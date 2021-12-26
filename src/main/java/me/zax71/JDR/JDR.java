@@ -1,7 +1,10 @@
 package me.zax71.JDR;
 
 import me.zax71.JDR.ChunkGen.stoneWorld;
+import me.zax71.JDR.commands.GMACommand;
 import me.zax71.JDR.commands.GMCCommand;
+import me.zax71.JDR.commands.GMSCommand;
+import me.zax71.JDR.commands.GMSPCommand;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.entity.Player;
 import net.minestom.server.event.GlobalEventHandler;
@@ -35,6 +38,9 @@ public class JDR {
 
         // Register commands
         MinecraftServer.getCommandManager().register(new GMCCommand());
+        MinecraftServer.getCommandManager().register(new GMSCommand());
+        MinecraftServer.getCommandManager().register(new GMACommand());
+        MinecraftServer.getCommandManager().register(new GMSPCommand());
 
         // Start the server on port 25565
         minecraftServer.start("0.0.0.0", 25565);
