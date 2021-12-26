@@ -5,6 +5,7 @@ import net.minestom.server.MinecraftServer;
 import net.minestom.server.entity.Player;
 import net.minestom.server.event.GlobalEventHandler;
 import net.minestom.server.event.player.PlayerLoginEvent;
+import net.minestom.server.extras.MojangAuth;
 import net.minestom.server.instance.*;
 import net.minestom.server.coordinate.Pos;
 
@@ -14,6 +15,8 @@ public class JDR {
 
         // Initialization
         MinecraftServer minecraftServer = MinecraftServer.init();
+
+        MojangAuth.init();
 
         InstanceManager instanceManager = MinecraftServer.getInstanceManager();
         // Create the instance
