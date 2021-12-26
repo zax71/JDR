@@ -1,6 +1,7 @@
 package me.zax71.JDR;
 
 import me.zax71.JDR.ChunkGen.stoneWorld;
+import me.zax71.JDR.commands.GMCCommand;
 import net.minestom.server.MinecraftServer;
 import net.minestom.server.entity.Player;
 import net.minestom.server.event.GlobalEventHandler;
@@ -31,6 +32,9 @@ public class JDR {
             event.setSpawningInstance(instanceContainer);
             player.setRespawnPoint(new Pos(0, 42, 0));
         });
+
+        // Register commands
+        MinecraftServer.getCommandManager().register(new GMCCommand());
 
         // Start the server on port 25565
         minecraftServer.start("0.0.0.0", 25565);
