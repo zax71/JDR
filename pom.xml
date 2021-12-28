@@ -81,16 +81,16 @@
     </repositories>
 
     <dependencies>
-        <dependency>
-            <groupId>com.github.Minestom</groupId>
-            <artifactId>Minestom</artifactId>
-            <version>e4a141be31</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.jboss.shrinkwrap.resolver</groupId>
-                    <artifactId>shrinkwrap-resolver-depchain</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+            <dependency>
+                <groupId>com.github.Minestom</groupId>
+                <artifactId>Minestom</artifactId>
+                <version>e4a141be31</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.jboss.shrinkwrap.resolver</groupId>
+                        <artifactId>shrinkwrap-resolver-depchain</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
     </dependencies>
 </project>
